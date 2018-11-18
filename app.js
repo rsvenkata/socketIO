@@ -20,7 +20,6 @@ const io = socketIO(server.listen(port, () => {
 
 io.on('connection', (socket) => {
     console.log(`Client with ${socket.id} is connected!`)
-
     socket.on('disconnect', () => {
         console.log(`Client with ${socket.id} is dis-connected!`)
     })
