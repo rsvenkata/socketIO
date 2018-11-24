@@ -28,7 +28,7 @@ io.on('connection', (socket) => {
     })
 
     socket.on('createMessage', (data, callback) => {
-        io.emit('studInfo', {data: data, sockName: socket.id, time: moment().format('Do MMM YY')})
+        io.emit('studInfo', {data: data, sockName: socket.id, time: moment().format('HH:mm - Do MMM YY')})
         callback()
     })
 })

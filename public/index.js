@@ -28,7 +28,7 @@ jQuery('#message-form').on('submit', (e) => {
 
 socket.on('studInfo', (data) => {
     let li1 = jQuery('<li></li>');
-    li1.text(`User says ==> ${data.data.name} @ ${data.time}`)  //${data.sockName} :
+    li1.text(`User says ==> ${data.data.name} ${data.time}`)  //${data.sockName} :
     jQuery('#Messages').append(li1)
 })
 
